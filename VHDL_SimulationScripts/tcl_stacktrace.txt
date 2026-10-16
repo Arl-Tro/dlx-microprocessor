@@ -1,0 +1,24 @@
+Mon Sep 21 17:14:03 CEST 2026
+Trace back: bad option "scan": must be annotate, bbox, cget, compare, configure, count, decreaseindent, delete, dump, edit, fold, get, index, increaseindent, insert, keywords, loadlexer, margin, mark, marker, property, scisearch, search, see, ssm, style, tag, textwidth, version, xview, yview, zoom, zoomin, or zoomout
+    while executing
+"$w scan mark $x $y"
+    (procedure "::scintilla::TextScanMark" line 3)
+    invoked from within
+"::scintilla::TextScanMark .main_pane.source.interior.cs.body.srcobj.sci 279 400"
+    invoked from within
+"if {!$tk_strictMotif} {
+        ::scintilla::TextScanMark .main_pane.source.interior.cs.body.srcobj.sci 279 400
+    }"
+    (command bound to event)
+  <2:C:/intelFPGA/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {bad option "scan": must be annotate, bbox, cget, compare, configure, count, decreaseindent, delete, dump, edit, fold, get, index, increaseindent, insert, keywords, loadlexer, margin, mark, marker, property, scisearch, search, see, ssm, style, tag, textwidth, version, xview, yview, zoom, zoomin, or zoomout}
+  <1:C:/mtitcl/vsim/vsimcmd.tc_:1485: ::tk::dialog::error::bgerror {bad option "scan": must be annotate, bbox, cget, compare, configure, count, decreaseindent, delete, dump, edit, fold, get, index, increaseindent, insert, keywords, loadlexer, margin, mark, marker, property, scisearch, search, see, ssm, style, tag, textwidth, version, xview, yview, zoom, zoomin, or zoomout}
+Sun Oct 04 16:46:53 CEST 2026
+Trace back: invalid command name "::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame.childsite.height_frame.height"
+    while executing
+"::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame.childsite.height_frame.height _checkLength"
+    (in namespace inscope "::iwidgets::Entryfield" script line 1)
+    invoked from within
+"namespace inscope ::iwidgets::Entryfield {::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame.childsite.heigh..."
+    (command bound to event)
+  <2:C:/intelFPGA/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name "::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame.childsite.height_frame.height"}
+  <1:C:/mtitcl/vsim/vsimcmd.tc_:1485: ::tk::dialog::error::bgerror {invalid command name "::.main_pane.wave.interior.cs.body.pw.wf.sig_dlg.nb.canvas.notebook.cs.page2.cs.format_frame.childsite.height_frame.height"}

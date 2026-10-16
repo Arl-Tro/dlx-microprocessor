@@ -1,0 +1,47 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity DEMUX_41 is
+    generic (
+        NBIT : integer := 32);
+    port (
+        Z : in std_logic_vector(NBIT - 1 downto 0);
+        D0, D1, D2, D3 : out std_logic_vector(NBIT - 1 downto 0);
+        SEL : in std_logic_vector(1 downto 0)
+
+    );
+end entity;
+
+architecture BHV of DEMUX_41 is
+begin
+    process (Z, SEL)
+    begin
+        case (SEL) is
+            when "00" =>
+                D0 <= Z;
+                D1 <= (others => '0');
+                D2 <= (others => '0');
+                D3 <= (others => '0');
+            when "01" =>
+                D0 <= (others => '0');
+                D1 <= Z;
+                D2 <= (others => '0');
+                D3 <= (others => '0');
+            when "10" =>
+                D0 <= (others => '0');
+                D1 <= (others => '0');
+                D2 <= Z;
+                D3 <= (others => '0');
+            when "11" =>
+                D0 <= (others => '0');
+                D1 <= (others => '0');
+                D2 <= (others => '0');
+                D3 <= Z;
+            when others =>
+                D0 <= (others => '0');
+                D1 <= (others => '0');
+                D2 <= (others => '0');
+                D3 <= (others => '0');
+        end case;
+    end process;
+end architecture;
